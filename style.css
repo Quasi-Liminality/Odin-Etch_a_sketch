@@ -35,7 +35,8 @@ main {
     height: 90vh;
     max-width: 80vw;
     max-height: 80vw;
-    background-color: white;
+    background-color: white !important;
+    opacity: 1 !important;
 }
 
 .grid > div {
