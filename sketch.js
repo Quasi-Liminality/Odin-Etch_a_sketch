@@ -20,7 +20,7 @@ function resizeGrid() {
         do {
             dimensions = prompt('How many rows/columns should the grid have (1-100)?');
             if (dimensions === null) return false; // User cancelled the prompt
-        } while (!parseInt(dimensions) || dimensions < 1 || dimensions > 100);
+        } while (!(/^\d+$/).test(dimensions) || dimensions < 1 || dimensions > 100);
         return dimensions;
     })();
     if (!newDimensions) return;
